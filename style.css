@@ -18,7 +18,8 @@
             --text-secondary: #a0a0b8;
             --text-muted: #6a6a82;
             /* --accent: #6c5ce7; */
-            --accent: #f92672;
+            /* --accent: #f92672; */
+            --accent:#007acc;
             --accent-glow: rgba(108, 92, 231, 0.15);
             --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-glow));
             --green: #3ddc84;
@@ -48,9 +49,9 @@
             text-decoration: none;
             transition: var(--transition);
         }
-        a:hover {
+        /* a:hover {
             color: #a29bfe;
-        }
+        } */
 
         .container {
             max-width: 1200px;
@@ -994,7 +995,7 @@
         /* video caption — lebih besar */
         .video-caption {
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
             right: 0;
             padding: 20px 24px 18px;

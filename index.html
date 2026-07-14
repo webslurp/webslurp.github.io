@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="icon" href="images/icon-16.png" type="image/png" sizes="96x96" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- ============================================================
-     WebSlurp SEO Meta Tags
-     ============================================================ -->
+    WebSlurp SEO Meta Tags
+    ============================================================ -->
 
     <title>WebSlurp – Lightweight API Capture Tool for Chrome DevTools</title>
 
@@ -26,10 +26,10 @@
     <meta name="title" content="WebSlurp – Lightweight API Capture Tool for Chrome DevTools" />
 
     <meta name="description"
-        content="WebSlurp is a free, open-source Chrome DevTools extension for API testing. Capture, inspect, edit, and replay HTTP/HTTPS requests without using an external proxy. A lightweight Burp Suite alternative focused on APIs." />
+    content="WebSlurp is a free, open-source Chrome DevTools extension for API testing. Capture, inspect, edit, and replay HTTP/HTTPS requests without using an external proxy. A lightweight Burp Suite alternative focused on APIs." />
 
     <meta name="keywords"
-        content="WebSlurp, Burp Suite alternative, Chrome DevTools extension, API capture, HTTP capture, request replay, API testing, API debugger, REST API testing, REST client, OAuth 2.0 testing, Fetch capture, XHR capture, Chrome API debugger, DevTools extension, open source security tool, bug bounty, penetration testing" />
+    content="WebSlurp, Burp Suite alternative, Chrome DevTools extension, API capture, HTTP capture, request replay, API testing, API debugger, REST API testing, REST client, OAuth 2.0 testing, Fetch capture, XHR capture, Chrome API debugger, DevTools extension, open source security tool, bug bounty, penetration testing" />
 
     <meta name="author" content="Hangga Aji Sayekti" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -44,79 +44,70 @@
     <meta property="og:site_name" content="WebSlurp" />
     <meta property="og:locale" content="en_US" />
 
-    <meta property="og:url"
-        content="https://hangga.web.id/WebSlurp/" />
+    <meta property="og:url" content="https://hangga.web.id/WebSlurp/" />
 
-    <meta property="og:title"
-        content="WebSlurp – Lightweight API Capture Tool for Chrome DevTools" />
+    <meta property="og:title" content="WebSlurp – Lightweight API Capture Tool for Chrome DevTools" />
 
     <meta property="og:description"
-        content="Capture, inspect, edit, and replay HTTP requests directly from Chrome DevTools. A lightweight open-source alternative to Burp Suite for API debugging and security testing." />
+    content="Capture, inspect, edit, and replay HTTP requests directly from Chrome DevTools. A lightweight open-source alternative to Burp Suite for API debugging and security testing." />
 
-    <meta property="og:image"
-        content="https://hangga.web.id/WebSlurp/images/og-image.png" />
+    <meta property="og:image" content="https://hangga.web.id/WebSlurp/images/og-image.png" />
 
-    <meta property="og:image:width"
-        content="1200" />
+    <meta property="og:image:width" content="1200" />
 
-    <meta property="og:image:height"
-        content="630" />
+    <meta property="og:image:height" content="630" />
 
-    <meta property="og:image:alt"
-        content="WebSlurp Chrome DevTools API Capture Tool" />
+    <meta property="og:image:alt" content="WebSlurp Chrome DevTools API Capture Tool" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
 
-    <meta name="twitter:title"
-        content="WebSlurp – Open-Source API Capture Tool" />
+    <meta name="twitter:title" content="WebSlurp – Open-Source API Capture Tool" />
 
-    <meta name="twitter:description"
-        content="Capture, inspect, edit, and replay API requests directly inside Chrome DevTools." />
+    <meta name="twitter:description" content="Capture, inspect, edit, and replay API requests directly inside Chrome DevTools." />
 
-    <meta name="twitter:image"
-        content="https://hangga.web.id/WebSlurp/images/og-image.png" />
+    <meta name="twitter:image" content="https://hangga.web.id/WebSlurp/images/og-image.png" />
 
     <meta name="twitter:creator" content="@hangga" />
 
     <!-- Schema.org -->
     <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "WebSlurp",
-    "url": "https://hangga.web.id/webslurp/",
-    "description": "WebSlurp is a free, open-source Chrome DevTools extension for capturing, inspecting, editing, and replaying HTTP/HTTPS API requests. Designed for developers, bug bounty hunters, penetration testers, and security researchers who need a lightweight Burp Suite alternative focused on APIs instead of full web traffic.",
-    "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Chrome, Chromium",
-    "browserRequirements": "Google Chrome or Chromium-based browser",
-    "license": "MIT",
-    "author": {
-        "@type": "Person",
-        "name": "Hangga Aji Sayekti"
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-    },
-    "featureList": [
-        "Capture Fetch API requests",
-        "Capture XHR requests",
-        "Edit and replay HTTP requests",
-        "Modify headers",
-        "Modify query parameters",
-        "Modify request body",
-        "OAuth 2.0 authentication",
-        "Basic Authentication",
-        "Bearer Token authentication",
-        "Copy request as cURL",
-        "Built directly into Chrome DevTools",
-        "Open source"
-    ],
-    "softwareVersion": "1.0",
-    "codeRepository": "https://github.com/hangga/WebSlurp"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "WebSlurp",
+            "url": "https://hangga.web.id/webslurp/",
+            "description": "WebSlurp is a free, open-source Chrome DevTools extension for capturing, inspecting, editing, and replaying HTTP/HTTPS API requests. Designed for developers, bug bounty hunters, penetration testers, and security researchers who need a lightweight Burp Suite alternative focused on APIs instead of full web traffic.",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Chrome, Chromium",
+            "browserRequirements": "Google Chrome or Chromium-based browser",
+            "license": "MIT",
+            "author": {
+                "@type": "Person",
+                "name": "Hangga Aji Sayekti"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "featureList": [
+                "Capture Fetch API requests",
+                "Capture XHR requests",
+                "Edit and replay HTTP requests",
+                "Modify headers",
+                "Modify query parameters",
+                "Modify request body",
+                "OAuth 2.0 authentication",
+                "Basic Authentication",
+                "Bearer Token authentication",
+                "Copy request as cURL",
+                "Built directly into Chrome DevTools",
+                "Open source"
+            ],
+            "softwareVersion": "1.0",
+            "codeRepository": "https://github.com/hangga/WebSlurp"
+        }
     </script>
 </head>
 
@@ -135,10 +126,10 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#demo">Demo</a></li>
-                <li><a href="#workflow">Workflow</a></li>   <!-- Tambahkan ini -->
+                <li><a href="#workflow">Workflow</a></li>
                 <li><a href="#install">Install</a></li>
                 <li><a href="#contribute">Contribute</a></li>
-                <li><a href="#contribute" class="nav-cta">Get Started</a></li>
+                <li><a href="#install" class="nav-cta">Get Started</a></li>
             </ul>
             <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -152,11 +143,10 @@
             <div class="hero-content">
                 <div class="badge">🔒 v1.4 · DevTools Extension</div>
                 <h1 class="hero-title">
-                    <!-- WebSlurp -->
                     <span>
                         The Lightweight
                     </span>
-                    <span class="highlight">Burp Suite Alternative</span><br>
+                    <span class="highlight">Burp Suite Alternative</span><br />
                     <span class="subtitle">
                         Built for Chrome DevTools
                     </span>
@@ -174,7 +164,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="images/brutu 2026-07-11 at 14.13.24.png" alt="WebSlurp screenshot" />
+                <img src="images/skrinsut-2.png" alt="WebSlurp screenshot" />
                 <div class="floating-badge pos-1"><span class="icon">🔍</span> Inspect headers</div>
                 <div class="floating-badge pos-2"><span class="icon">✎</span> Modify &amp; replay</div>
                 <div class="floating-badge pos-3"><span class="icon">🔐</span> OAuth 2.0 ready</div>
@@ -182,48 +172,90 @@
         </div>
     </section>
 
-    <!-- ===== VIDEO DEMO — ENHANCED & LARGER ===== -->
+    <!-- ===== VIDEO DEMO — 6 VIDEOS GRID ===== -->
     <section class="video-section" id="demo">
         <div class="container">
             <span class="section-label">🎬 See it in action</span>
             <h2 class="section-title">Watch <span class="highlight">WebSlurp</span> at work</h2>
             <p class="section-sub">
-                Watch a request get captured, tweaked, and replayed in seconds. No context switching, no magic tricks—just Chrome DevTools quietly showing off.
+                From opening the panel to editing requests, searching responses, and switching themes — see everything WebSlurp can do.
             </p>
 
             <div class="video-grid">
-                <!-- Video 1: Capture & Inspect -->
-                <!-- <div class="video-wrapper" data-video="1">
-                    <video autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/f1d04663-022e-4385-9243-9cd3e7988e11"
-                            type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <span class="video-badge">📡 Capture</span>
-                    <div class="video-caption">Capture &amp; inspect requests in real‑time</div>
-                    <span class="play-indicator is-playing"></span>
-                </div> -->
 
-                <!-- Video 2: Edit & Replay -->
-                <div class="video-wrapper" data-video="2">
-                    <!-- <span class="video-badge">✎ Replay</span> -->
-                    <!-- <div class="video-caption">Edit headers, body &amp; auth — then replay instantly</div> -->
+                <!-- 1. Open First -->
+                <div class="video-wrapper" data-video="1">
+                    <div class="video-caption">Open WebSlurp directly from Chrome DevTools</div>
                     <video controls autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/ec35c36c-55e8-49ef-9a77-7fa610949520"
-                            type="video/mp4" />
+                        <source src="https://github.com/user-attachments/assets/74166d33-ee1f-4667-89a6-1c98f8ec1886"
+                        type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    
                     <span class="play-indicator is-playing"></span>
                 </div>
 
-                <p style="text-align: center; margin-top: 100px;">
-                    <a href="#install" target="_blank" class="btn btn-primary">
-                        Install Now →
-                    </a>
-                </p>
+                <!-- 2. Edit Method -->
+                <div class="video-wrapper" data-video="2">
+                    <div class="video-caption">Change HTTP method (GET, POST, PUT, DELETE) instantly</div>
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/17dfbf4b-4ae7-4165-a7e9-ce5ec6ef20c0"
+                        type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="play-indicator is-playing"></span>
+                </div>
+
+                <!-- 3. Live Edit Params -->
+                <div class="video-wrapper" data-video="3">
+                    <div class="video-caption">Edit query parameters and see changes in real-time</div>
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/58ba4bd8-cbb3-47d2-a56d-44628ac057e2"
+                        type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="play-indicator is-playing"></span>
+                </div>
+
+                <!-- 4. Change Theme -->
+                <div class="video-wrapper" data-video="4">
+                    <div class="video-caption">Switch between light and dark themes seamlessly</div>
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/c160d189-f7df-477d-8e6e-bc8a9ed8d9e8"
+                        type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="play-indicator is-playing"></span>
+                </div>
+
+                <!-- 5. Search Response -->
+                <div class="video-wrapper" data-video="5">
+                    <div class="video-caption">Search through response bodies and headers</div>
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/ee08cb76-79c1-4c32-a003-ef3bbe9b3292"
+                        type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="play-indicator is-playing"></span>
+                </div>
+
+                <!-- 6. Local Files -->
+                <div class="video-wrapper" data-video="6">
+                    <div class="video-caption">Save and load requests from local files</div>
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/6f293f80-7828-469d-a42c-9a3201614a59"
+                        type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="play-indicator is-playing"></span>
+                </div>
 
             </div>
+
+            <p style="text-align: center; margin-top: 60px;">
+                <a href="#install" target="_blank" class="btn btn-primary">
+                    Install Now →
+                </a>
+            </p>
         </div>
     </section>
 
@@ -359,7 +391,7 @@
                         <span class="step-num">1</span>
                         <div class="step-content">
                             <h4>Clone the repo</h4>
-                            <p><code>git clone https://github.com/hangga/WebSlurp.git</code></p>
+                            <p><code>git clone https://github.com/hangga/webslurp.git</code></p>
                         </div>
                     </div>
                     <div class="step">
@@ -427,9 +459,6 @@
                     </div>
 
                 </div>
-                <!-- <div class="floating-badge pos-1">1. Clone repo</div>
-            <div class="floating-badge pos-3">2. → Navigate to chrome://extensions/ <br/> → enable developer mode</div>
-            <div class="floating-badge pos-2" style="margin-left: -20px;">3. Click Load unpacked <br/>  →  select the folder <br/>containing manifest.json</div> -->
             </div>
         </div>
     </section>
@@ -451,10 +480,10 @@
                 </ul>
 
                 <div class="contrib-cta">
-                    <a href="https://github.com/hangga/WebSlurp" target="_blank" class="btn btn-primary">
+                    <a href="https://github.com/hangga/webslurp" target="_blank" class="btn btn-primary">
                         <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor">
                             <path
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                         Open a Pull Request →
                     </a>
@@ -481,14 +510,11 @@
                 © 2026 WebSlurp · MIT License
             </div>
             <div class="footer-links">
-                <a href="https://github.com/hangga/WebSlurp" target="_blank">GitHub</a>
+                <a href="https://github.com/hangga/webslurp" target="_blank">GitHub</a>
                 <a href="#home">Home</a>
                 <a href="#features">Features</a>
                 <a href="#install">Install</a>
             </div>
-            <!-- <div class="fun-fact">
-                💡 Fun fact: "Brutu" is Javanese for chicken tail. Not the first thing you expect from a security tool... but it definitely starts conversations. 😄
-            </div> -->
         </div>
     </footer>
     <script src="script.js"></script>
