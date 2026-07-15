@@ -1495,3 +1495,104 @@
     /* color: black; */
     color: #fff;
 }
+
+/* ===== SPONSOR ===== */
+.sponsor {
+  padding: 80px 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sponsor .section-label,
+.sponsor .section-title,
+.sponsor .section-sub {
+  text-align: center;
+}
+
+.sponsor .section-sub {
+  margin: 0 auto 40px;
+  max-width: 600px;
+}
+
+.sponsor-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===== GITHUB SPONSOR BUTTON ===== */
+.btn-githubsponsor {
+    background: #ea4aaa;
+    border-color: #ea4aaa;
+    color: #fff;
+}
+.btn-githubsponsor:hover {
+    background: #c93a8f;
+    border-color: #c93a8f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(234, 74, 170, 0.3);
+    color: #fff;
+}
+
+.btn-coffee,
+.btn-paypal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-coffee img {
+  height: 28px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.btn-coffee:hover,
+.btn-paypal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(108, 92, 231, 0.3);
+}
+
+.btn-paypal {
+  background: #003087;
+  border-color: #003087;
+  color: #fff;
+}
+
+.btn-paypal:hover {
+  background: #002266;
+  border-color: #002266;
+}
+
+.btn-coffee {
+  background: #ff813f;
+  border-color: #ff813f;
+  color: #fff;
+}
+
+.btn-coffee:hover {
+  background: #e6732e;
+  border-color: #e6732e;
+}
+
+/* ===== CENTER SECTION LABELS FOR VIDEO, WORKFLOW, SPONSOR ===== */
+.video-section .section-label,
+.workflow .section-label,
+.sponsor .section-label {
+    display: block;          /* biar selebar container */
+    text-align: center;      /* teks di tengah */
+}
