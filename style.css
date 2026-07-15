@@ -972,7 +972,7 @@
             display: block;
             width: 100%;
             height: auto;
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 16 / 10;
             object-fit: cover;
             background: #0a0a0f;
         }
