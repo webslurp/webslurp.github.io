@@ -145,11 +145,11 @@
                 <div class="badge">🔒 v1.4 · DevTools Extension</div>
                 <h1 class="hero-title">
                     <span>
-                        The Lightweight
+                        A Lightweight
                     </span>
                     <span class="highlight">Burp Suite Alternative</span><br />
                     <span class="subtitle">
-                        Built for Chrome DevTools
+                        Right Inside Chrome DevTools
                     </span>
                 </h1>
 
@@ -161,7 +161,7 @@
                     <a href="#install" target="_blank" class="btn btn-primary">
                         Install Now →
                     </a>
-                    <a href="#features" class="btn">Learn more →</a>
+                    <a href="#features" class="btn">See Features →</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -179,7 +179,7 @@
             <span class="section-label">🎬 See it in action</span>
             <h2 class="section-title">Watch <span class="highlight">WebSlurp</span> at work</h2>
             <p class="section-sub">
-                From opening the panel to editing requests, searching responses, and switching themes — see everything WebSlurp can do.
+                From capturing and editing requests to searching responses and switching themes, see how WebSlurp fits into your everyday API testing workflow.
             </p>
 
             <div class="video-grid">
@@ -340,36 +340,47 @@
             <span class="section-label">⚡ Capabilities</span>
             <h2 class="section-title">Built for <span class="highlight">developers &amp; testers</span></h2>
             <p class="section-sub">
-                Whether you're debugging an API, hunting bugs, or wondering what an endpoint is actually doing, WebSlurp keeps everything within easy reach.
+                Whether you're debugging an API, hunting bugs, or just wondering what an endpoint is actually doing, WebSlurp keeps the requests you care about within easy reach.
             </p>
+
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="icon-wrap">📡</div>
-                    <h3>Capture all requests</h3>
-                    <p>Automatically captures XHR &amp; Fetch requests from the active tab, complete with headers, bodies, and everything worth inspecting.
+                    <h3>Capture API Requests</h3>
+                    <p>
+                        Automatically capture XHR &amp; Fetch requests from the active tab, complete with headers, bodies, and the details worth inspecting.
                     </p>
                     <span class="tag">real-time</span>
                 </div>
+
                 <div class="feature-card">
                     <div class="icon-wrap">🔧</div>
                     <h3>Edit &amp; Replay</h3>
-                    <p>Change headers, body, query parameters, or authentication, then replay the request with a single click. No copy-paste marathon required. Your Ctrl+C key deserves a break.</p>
+                    <p>
+                        Change headers, query parameters, body, or authentication, then replay the request with a single click. No copy-paste marathon required. Your Ctrl+C key deserves a break.
+                    </p>
                     <span class="tag">flexible</span>
                 </div>
+
                 <div class="feature-card">
                     <div class="icon-wrap">🔐</div>
-                    <h3>Auth made easy</h3>
-                    <p>OAuth 2.0, Bearer Tokens, or Basic Auth—we've already handled the boring authentication bits.
+                    <h3>Authentication Made Easy</h3>
+                    <p>
+                        OAuth 2.0, Bearer Tokens, and Basic Auth are built right in, so you can spend less time wrestling with authentication and more time testing the actual API.
                     </p>
-                    <span class="tag">secure</span>
+                    <span class="tag">built-in</span>
                 </div>
+
                 <div class="feature-card">
                     <div class="icon-wrap">📋</div>
                     <h3>Copy as cURL</h3>
-                    <p>Need it elsewhere? Copy the request as <code>curl</code> and keep your cookies intact.</p>
+                    <p>
+                        Need the request somewhere else? Copy it as <code>curl</code>, cookies included, and take it wherever your terminal leads you.
+                    </p>
                     <span class="tag">portable</span>
                 </div>
             </div>
+
             <p style="text-align: center; margin-top: 100px;">
                 <a href="#install" target="_blank" class="btn btn-primary">
                     Install Now →
@@ -377,6 +388,7 @@
             </p>
         </div>
     </section>
+
 
     <!-- ===== INSTALLATION ===== -->
     <section class="install" id="install">
@@ -466,10 +478,97 @@
 
     <!-- ===== INSTALLATION COMPARISON (ENGLISH) ===== -->
     <section class="workflow" style="background: var(--bg-secondary);">
+        <span class="section-label" style="text-align: center; display: block;">⚡ Less Setup</span>
+
+        <h2 class="section-title" style="text-align: center;">
+            Less Setup. <span class="highlight">More Testing.</span>
+        </h2>
+
+        <p class="section-sub" style="text-align: center; margin: 0 auto 48px;">
+            No separate app to configure, no account to create, and no proxy to set up. WebSlurp runs right where you're already working.
+        </p>
+
+        <div class="workflow-table-wrapper">
+            <table class="workflow-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>
+                            <img src="images/postman.png" style="width: 120px;" alt="Postman">
+                        </th>
+                        <th>
+                            <img src="images/burp-logo.png" style="width: 150px;" alt="Burp Suite">
+                        </th>
+                        <th>
+                            <img src="images/icon-128.png" style="width: 60px;" alt="WebSlurp">
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Download the app</td>
+                        <td>Download the installer</td>
+                        <td><strong>Clone the repo</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Install the app</td>
+                        <td>Install and launch Burp Suite</td>
+                        <td><strong>Enable Developer mode</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Open Postman</td>
+                        <td>Configure your browser and proxy</td>
+                        <td><strong>Load unpacked</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Import or build your request</td>
+                        <td>Start capturing traffic</td>
+                        <td>
+                            <strong>Open DevTools → WebSlurp</strong>
+                            <br>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">
+                                Your API requests are ready to inspect.
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="empty-cell"></td>
+                        <td class="empty-cell"></td>
+                        <td>
+                            No separate app. No login. No proxy setup.
+                            <br><br>
+                            <span class="done-badge">✅ Ready to slurp</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="workflow-note">
+            <div class="workflow-highlight">
+                🚀 <strong>Bottom line:</strong> No separate app. No login. No proxy setup.
+                Open DevTools, switch to <strong>WebSlurp</strong>, and start working with your API requests.
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- <section class="workflow" style="background: var(--bg-secondary);">
         <span class="section-label" style="text-align: center; display: block;">⚡ Installation</span>
         <h2 class="section-title" style="text-align: center;">Installation <span class="highlight">Comparison</span></h2>
         <p class="section-sub" style="text-align: center; margin: 0 auto 48px;">
-            See how incredibly simple WebSlurp is to set up compared to traditional tools.
+            No installer. No account. No proxy setup. See how WebSlurp gets you from zero to testing with less friction.
         </p>
 
         <div class="workflow-table-wrapper">
@@ -511,15 +610,12 @@
                         <td>5</td>
                         <td>Must <strong>Login / Sign Up</strong></td>
                         <td>Set manual proxy (127.0.0.1:8080)</td>
-                        <!-- <td><strong>⏱️ ± 2 minutes</strong></td> -->
                         <td></td>
-                        <!-- <td><strong>Zero config, no login, no proxy setup</strong></td> -->
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>⏱️ ± 6 minutes</td>
                         <td>⏱️ ± 5 minutes</td>
-                        <!-- <td></td> -->
                         <td><strong>⏱️ ± 2 minutes</strong></td>
                     </tr>
                     <tr>
@@ -532,13 +628,12 @@
             </table>
         </div>
         
-        <!-- Bottom Note -->
         <div class="workflow-note">
             <div class="workflow-highlight">
                 🚀 <strong>Bottom line:</strong> <strong>WebSlurp</strong> requires no installation, no Java, no login, and no proxy setup — just right-click <strong>Inspect → WebSlurp</strong> and you're good to go!
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ===== CONTRIBUTE ===== -->
     <section class="contribute" id="contribute">
@@ -583,11 +678,10 @@
     <!-- ===== SPONSOR ===== -->
     <section class="sponsor" id="sponsor">
     <div class="container">
-        <span class="section-label">☕ Welcome to Sponsor</span>
+        <span class="section-label">☕ Support the Project</span>
         <h2 class="section-title">Support <span class="highlight">WebSlurp</span></h2>
         <p class="section-sub">
-        If WebSlurp saves you time or makes your API testing easier, consider buying me a coffee.
-        Your support keeps the project alive and motivates further development.
+        If WebSlurp saves you time or makes API testing a little easier, consider supporting the project. It helps keep WebSlurp maintained, improving, and free for everyone.
         </p>
         <div class="sponsor-buttons">
             <!-- <a href="https://www.buymeacoffee.com/hangga" target="_blank" class="btn btn-coffee">
