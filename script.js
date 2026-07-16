@@ -156,3 +156,78 @@
             });
         }, { once: false });
     })();
+
+//     // ===== VIDEO THUMBNAIL + LIGHTBOX =====
+// document.addEventListener('DOMContentLoaded', () => {
+//     const thumbs = document.querySelectorAll('.video-thumb');
+//     const modal = document.getElementById('videoModal');
+//     const backdrop = document.getElementById('modalBackdrop');
+//     const closeBtn = document.getElementById('modalClose');
+//     const modalVideo = document.getElementById('modalVideo');
+
+//     // Buka modal
+//     thumbs.forEach(thumb => {
+//         thumb.addEventListener('click', () => {
+//             const src = thumb.dataset.videoSrc;
+//             if (!src) return;
+
+//             // Set source video
+//             modalVideo.querySelector('source').src = src;
+//             modalVideo.load();
+            
+//             // Tampilkan modal
+//             modal.classList.add('open');
+//             modalVideo.play().catch(() => {});
+//         });
+//     });
+
+//     // Tutup modal
+//     const closeModal = () => {
+//         modal.classList.remove('open');
+//         modalVideo.pause();
+//         // Reset src agar stop loading
+//         modalVideo.querySelector('source').src = '';
+//         modalVideo.load();
+//     };
+
+//     backdrop.addEventListener('click', closeModal);
+//     closeBtn.addEventListener('click', closeModal);
+
+//     // Tutup dengan tombol ESC
+//     document.addEventListener('keydown', (e) => {
+//         if (e.key === 'Escape' && modal.classList.contains('open')) {
+//             closeModal();
+//         }
+//     });
+// });
+
+// ===== IMAGE LIGHTBOX ZOOM =====
+document.addEventListener('DOMContentLoaded', () => {
+    const piiCards = document.querySelectorAll('.pii-card');
+    const imageModal = document.getElementById('imageModal');
+    const modalBackdrop = document.getElementById('imageModalBackdrop');
+    const modalClose = document.getElementById('imageModalClose');
+    const modalImage = document.getElementById('modalImage');
+
+    piiCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const src = card.dataset.imgSrc || card.querySelector('img')?.src;
+            if (!src) return;
+            modalImage.src = src;
+            imageModal.classList.add('open');
+        });
+    });
+
+    const closeImageModal = () => {
+        imageModal.classList.remove('open');
+        modalImage.src = ''; // kosongkan agar tidak loading
+    };
+
+    modalBackdrop.addEventListener('click', closeImageModal);
+    modalClose.addEventListener('click', closeImageModal);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && imageModal.classList.contains('open')) {
+            closeImageModal();
+        }
+    });
+});

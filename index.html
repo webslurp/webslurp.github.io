@@ -175,91 +175,142 @@
     </section>
 
     <!-- ===== VIDEO DEMO — 6 VIDEOS GRID ===== -->
+     <!-- ===== VIDEO DEMO — GRID + LIGHTBOX ===== -->
     <section class="video-section" id="demo">
         <div class="container">
             <span class="section-label">🎬 See it in action</span>
             <h2 class="section-title">Watch <span class="highlight">WebSlurp</span> at work</h2>
             <p class="section-sub">
-                From capturing and editing requests to searching responses and switching themes, see how WebSlurp fits into your everyday API testing workflow.
+                Click any thumbnail to open the demo. Each video shows a key feature of WebSlurp.
             </p>
 
-            <div class="video-grid">
-
-                <!-- 1. Open First -->
-                <div class="video-wrapper" data-video="1">
-                    <div class="video-caption">Open WebSlurp directly from Chrome DevTools</div>
-                    <video controls autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/74166d33-ee1f-4667-89a6-1c98f8ec1886"
-                        type="video/mp4" />
-                        Your browser does not support the video tag.
+            <div class="video-grid thumb-grid">
+                <!-- 1 -->
+                <div class="video-thumb" data-video-src="https://github.com/user-attachments/assets/74166d33-ee1f-4667-89a6-1c98f8ec1886">
+                    <div class="thumb-overlay">
+                        <div class="play-icon">▶</div>
+                        <span class="thumb-label">Open DevTools</span>
+                    </div>
+                    <video muted playsinline preload="metadata" poster="images/thumb-placeholder-1.jpg">
+                        <source src="https://github.com/user-attachments/assets/74166d33-ee1f-4667-89a6-1c98f8ec1886" type="video/mp4" />
                     </video>
-                    <span class="play-indicator is-playing"></span>
                 </div>
 
-                <!-- 2. Edit Method -->
-                <div class="video-wrapper" data-video="2">
-                    <div class="video-caption">Change HTTP method (GET, POST, PUT, DELETE) instantly</div>
-                    <video controls autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/17dfbf4b-4ae7-4165-a7e9-ce5ec6ef20c0"
-                        type="video/mp4" />
-                        Your browser does not support the video tag.
+                <!-- 2 -->
+                <div class="video-thumb" data-video-src="https://github.com/user-attachments/assets/17dfbf4b-4ae7-4165-a7e9-ce5ec6ef20c0">
+                    <div class="thumb-overlay">
+                        <div class="play-icon">▶</div>
+                        <span class="thumb-label">Change HTTP Method</span>
+                    </div>
+                    <video muted playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/17dfbf4b-4ae7-4165-a7e9-ce5ec6ef20c0" type="video/mp4" />
                     </video>
-                    <span class="play-indicator is-playing"></span>
                 </div>
 
-                <!-- 3. Live Edit Params -->
-                <div class="video-wrapper" data-video="3">
-                    <div class="video-caption">Edit query parameters and see changes in real-time</div>
-                    <video controls autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/58ba4bd8-cbb3-47d2-a56d-44628ac057e2"
-                        type="video/mp4" />
-                        Your browser does not support the video tag.
+                <!-- 3 -->
+                <div class="video-thumb" data-video-src="https://github.com/user-attachments/assets/58ba4bd8-cbb3-47d2-a56d-44628ac057e2">
+                    <div class="thumb-overlay">
+                        <div class="play-icon">▶</div>
+                        <span class="thumb-label">Edit Query Params</span>
+                    </div>
+                    <video muted playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/58ba4bd8-cbb3-47d2-a56d-44628ac057e2" type="video/mp4" />
                     </video>
-                    <span class="play-indicator is-playing"></span>
                 </div>
 
-                <!-- 4. Search Response -->
-                <div class="video-wrapper" data-video="5">
-                    <div class="video-caption">Search through response bodies and headers</div>
-                    <video controls autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/ee08cb76-79c1-4c32-a003-ef3bbe9b3292"
-                        type="video/mp4" />
-                        Your browser does not support the video tag.
+                <!-- 4 -->
+                <div class="video-thumb" data-video-src="https://github.com/user-attachments/assets/ee08cb76-79c1-4c32-a003-ef3bbe9b3292">
+                    <div class="thumb-overlay">
+                        <div class="play-icon">▶</div>
+                        <span class="thumb-label">Search Response</span>
+                    </div>
+                    <video muted playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/ee08cb76-79c1-4c32-a003-ef3bbe9b3292" type="video/mp4" />
                     </video>
-                    <span class="play-indicator is-playing"></span>
                 </div>
 
-                <!-- 5. Local Files -->
-                <div class="video-wrapper" data-video="6">
-                    <div class="video-caption">Save and load requests from local files</div>
-                    <video controls autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/6f293f80-7828-469d-a42c-9a3201614a59"
-                        type="video/mp4" />
-                        Your browser does not support the video tag.
+                <!-- 5 -->
+                <div class="video-thumb" data-video-src="https://github.com/user-attachments/assets/6f293f80-7828-469d-a42c-9a3201614a59">
+                    <div class="thumb-overlay">
+                        <div class="play-icon">▶</div>
+                        <span class="thumb-label">Save Local Files</span>
+                    </div>
+                    <video muted playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/6f293f80-7828-469d-a42c-9a3201614a59" type="video/mp4" />
                     </video>
-                    <span class="play-indicator is-playing"></span>
                 </div>
 
-                <!-- 6. Change Theme -->
-                <div class="video-wrapper" data-video="4">
-                    <div class="video-caption">Switch between light and dark themes seamlessly</div>
-                    <video controls autoplay muted loop playsinline preload="metadata">
-                        <source src="https://github.com/user-attachments/assets/c160d189-f7df-477d-8e6e-bc8a9ed8d9e8"
-                        type="video/mp4" />
-                        Your browser does not support the video tag.
+                <!-- 6 -->
+                <div class="video-thumb" data-video-src="https://github.com/user-attachments/assets/c160d189-f7df-477d-8e6e-bc8a9ed8d9e8">
+                    <div class="thumb-overlay">
+                        <div class="play-icon">▶</div>
+                        <span class="thumb-label">Change Theme</span>
+                    </div>
+                    <video muted playsinline preload="metadata">
+                        <source src="https://github.com/user-attachments/assets/c160d189-f7df-477d-8e6e-bc8a9ed8d9e8" type="video/mp4" />
                     </video>
-                    <span class="play-indicator is-playing"></span>
                 </div>
-
             </div>
 
-            <p style="text-align: center; margin-top: 60px;">
-                <a href="#install" target="_blank" class="btn btn-primary">
-                    Install Now →
-                </a>
+            <!-- ===== LIGHTBOX MODAL ===== -->
+            <div class="video-modal" id="videoModal">
+                <div class="modal-backdrop" id="modalBackdrop"></div>
+                <div class="modal-content">
+                    <button class="modal-close" id="modalClose">&times;</button>
+                    <video id="modalVideo" controls autoplay playsinline>
+                        <source src="" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 48px;">
+                <a href="#install" class="btn btn-primary">Install Now →</a>
             </p>
         </div>
     </section>
+
+    <!-- ===== PII / SECRET DETECTION SHOWCASE ===== -->
+    <!-- ===== PII / SECRET DETECTION SHOWCASE ===== -->
+    <section class="pii-showcase" id="pii">
+        <div class="container">
+            <span class="section-label">🔍 Real‑world detection</span>
+            <h2 class="section-title">Find <span class="highlight">secrets &amp; PII</span> in API responses</h2>
+            <p class="section-sub">
+                WebSlurp automatically highlights sensitive data—API keys, tokens, emails, phone numbers, and more—so you can spot leaks before they become incidents.
+            </p>
+
+            <div class="pii-grid">
+                <figure class="pii-card" data-img-src="images/detected_jwt-cen.png">
+                    <img src="images/detected_jwt-cen.png" alt="WebSlurp detecting API key in response" loading="lazy" />
+                    <figcaption>🔑 API key &amp; Bearer token detected in JSON response</figcaption>
+                </figure>
+                <figure class="pii-card" data-img-src="images/deetct_pii-cen.png">
+                    <img src="images/deetct_pii-cen.png" alt="WebSlurp finding email addresses and phone numbers" loading="lazy" />
+                    <figcaption>📧 Email addresses and phone numbers flagged</figcaption>
+                </figure>
+                <figure class="pii-card" data-img-src="images/detect_security_header-cen.png">
+                    <img src="images/detect_security_header-cen.png" alt="WebSlurp security headers audit" loading="lazy" />
+                    <figcaption>🛡️ Missing security headers (CSP, HSTS) are reported</figcaption>
+                </figure>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; color: var(--text-secondary); font-size: 0.95rem;">
+                <span style="background: var(--bg-card); padding: 8px 20px; border-radius: 50px; border: 1px solid var(--border-color);">
+                    ⚡ No extra configuration — it just works
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== IMAGE LIGHTBOX MODAL (untuk PII zoom) ===== -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-backdrop" id="imageModalBackdrop"></div>
+        <div class="modal-content image-modal-content">
+            <button class="modal-close" id="imageModalClose">&times;</button>
+            <img id="modalImage" src="" alt="Zoomed screenshot" />
+        </div>
+    </div>
 
     <!-- ===== WORKFLOW COMPARISON ===== -->
     <section class="workflow" id="workflow">
