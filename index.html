@@ -130,6 +130,7 @@
                 <li><a href="#demo">Demo</a></li>
                 <li><a href="#workflow">Workflow</a></li>
                 <li><a href="#install">Install</a></li>
+                <li><a href="#update">Update</a></li>
                 <li><a href="#contribute">Contribute</a></li>
                 <li><a href="#sponsor">Support Us</a></li>
                 <li><a href="#install" class="nav-cta">Get Started</a></li>
@@ -510,37 +511,135 @@
                                 <span class="cmd">$</span> git clone https://github.com/hangga/webslurp.git
                             </div>
 
-                            <div class="line" style="--d:1s">
+                            <div class="line" style="--d:0.5s">
                                 Cloning into 'WebSlurp'...
                             </div>
 
-                            <div class="line" style="--d:2s">
+                            <div class="line" style="--d:1s">
                                 remote: Enumerating objects: 138, done.
                             </div>
 
-                            <div class="line" style="--d:3s">
+                            <div class="line" style="--d:1.5s">
                                 remote: Counting objects: 100% (138/138), done.
                             </div>
 
-                            <div class="line" style="--d:4s">
+                            <div class="line" style="--d:2s">
                                 remote: Compressing objects: 100% (96/96), done.
                             </div>
 
-                            <div class="line" style="--d:5s">
+                            <div class="line" style="--d:2.5s">
                                 remote: Total 138 (delta 68), reused 103 (delta 42), pack-reused 0 (from 0)
                             </div>
 
-                            <div class="line" style="--d:6s">
+                            <div class="line" style="--d:3s">
                                 Receiving objects: 100% (138/138), 1.15 MiB | 4.58 MiB/s, done.
                             </div>
 
-                            <div class="line cursor" style="--d:7s">
+                            <div class="line cursor" style="--d:3.5s">
                                 Resolving deltas: 100% (68/68), done.
                             </div>
 
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATE -->
+    <section class="install" id="update">
+        <div class="container">
+            <div class="install-content">
+                <span class="section-label">🚧 Living project</span>
+
+                <h2 class="section-title">
+                    Updating <span class="highlight">WebSlurp</span> is easy
+                </h2>
+
+                <p class="section-sub">
+                    WebSlurp isn't on the Chrome Web Store yet. I usually push improvements,
+                    fixes, and experiments straight to the <code>main</code> branch. If you
+                    pulled it once, keeping it up to date only takes a few seconds.
+                </p>
+
+                <div class="install-steps">
+                    <div class="step">
+                        <span class="step-num">1</span>
+                        <div class="step-content">
+                            <h4>Open your project folder</h4>
+                            <p>Jump into the directory where you cloned WebSlurp.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-num">2</span>
+                        <div class="step-content">
+                            <h4>Pull the latest commits</h4>
+                            <p>Run <code>git pull origin main</code>. That's usually all you need.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-num">3</span>
+                        <div class="step-content">
+                            <h4>Reload the extension</h4>
+                            <p>Open <code>chrome://extensions/</code> and hit the reload button for WebSlurp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top:24px;font-size:.9rem;color:var(--text-secondary);">
+                    💡 <strong>Heads up:</strong> I sometimes push multiple commits a day. Most
+                    updates are small improvements or bug fixes, so pulling regularly is a good idea.
+                </p>
+            </div>
+
+            <div class="install-visual">
+                <div class="hero-terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">Terminal ➝ Updating WebSlurp</span>
+                    </div>
+
+                    <div class="install-card">
+                            <div class="code-block">
+                                <div class="linetyping" style="--d:0s">
+                                    <span class="cmd">$</span> git pull origin main
+                                </div>
+                                
+                                <div class="line" style="--d:1s">
+                                    * branch            main       -> FETCH_HEAD
+                                </div>
+                                <div class="line" style="--d:1.5s">
+                                    197bbe1..b3b1827  main       -> origin/main
+                                </div>
+                                <div class="line" style="--d:2s">
+                                    Updating 197bbe1..b3b1827
+                                </div>
+                                <div class="line" style="--d:2.5s">
+                                    Fast-forward
+                                </div>
+                                <div class="line" style="--d:3s">
+                                    <span style="color: #7c9;" class="file"> manifest.json      |  2 +-</span>
+                                </div>
+                                <div class="line" style="--d:3.5s">
+                                    <span style="color: #7c9;" class="file"> modules/network.js | 22 +++++++++++++++++-----</span>
+                                </div>
+                                <div class="line" style="--d:4s">
+                                    <span style="color: #7c9;" class="file"> modules/render.js  | 21 +++------------------</span>
+                                </div>
+                                <div class="line" style="--d:4.5s">
+                                    <span style="color: #7c9;" class="file"> modules/state.js   |  6 ++++++</span>
+                                </div>
+                                
+                                <div class="line cursor" style="--d:5s">
+                                    6 files changed, 31 insertions(+), 25 deletions(-)
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

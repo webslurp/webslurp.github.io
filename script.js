@@ -197,3 +197,68 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// ===== REPLAY UPDATE ANIMATION =====
+function replayUpdateAnimation() {
+    const codeBlock = document.querySelector('#update .code-block');
+    if (!codeBlock) return;
+
+    const typingEl = codeBlock.querySelector('.linetyping');
+    const lineEls = codeBlock.querySelectorAll('.line');
+
+    if (typingEl) {
+        typingEl.classList.remove('linetyping');
+        typingEl.style.width = '0';
+        typingEl.style.animation = 'none';
+        typingEl.style.opacity = '1';
+    }
+
+    lineEls.forEach(el => {
+        el.classList.remove('line');
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(6px)';
+        el.style.animation = 'none';
+    });
+
+    void codeBlock.offsetHeight;
+
+    if (typingEl) {
+        setTimeout(() => {
+            typingEl.classList.add('linetyping');
+            typingEl.style.width = '';
+            typingEl.style.animation = '';
+            typingEl.style.opacity = '';
+        }, 30);
+    }
+
+    lineEls.forEach((el, index) => {
+        const delay = 30 + (index + 1) * 60;
+        setTimeout(() => {
+            el.classList.add('line');
+            el.style.opacity = '';
+            el.style.transform = '';
+            el.style.animation = '';
+        }, delay);
+    });
+}
+
+// Trigger replay saat link ke #update diklik
+document.querySelectorAll('a[href="#update"]').forEach(link => {
+    link.addEventListener('click', function() {
+        setTimeout(replayUpdateAnimation, 200);
+    });
+});
+
+// Trigger replay saat klik di dalam area #update (dengan debounce)
+let lastUpdateReplayTime = 0;
+document.addEventListener('click', function(e) {
+    const updateSection = document.getElementById('update');
+    if (!updateSection) return;
+    if (updateSection.contains(e.target)) {
+        const now = Date.now();
+        if (now - lastUpdateReplayTime > 1500) {
+            lastUpdateReplayTime = now;
+            replayUpdateAnimation();
+        }
+    }
+});
