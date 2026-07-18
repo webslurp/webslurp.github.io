@@ -262,3 +262,79 @@ document.addEventListener('click', function(e) {
         }
     }
 });
+
+// ===== BUILT IN PUBLIC – TESTIMONIAL CAROUSEL =====
+(function initTestimonialCarousel() {
+    const track = document.getElementById('testimonialTrack');
+    const dots = document.querySelectorAll('#testimonialDots .dot');
+    const slides = track ? track.querySelectorAll('.testimonial-slide') : [];
+    let currentIndex = 0;
+    let intervalId = null;
+    const INTERVAL_MS = 6000; // 6 seconds
+
+    if (!track || slides.length === 0) return;
+
+    // ---- Show slide by index ----
+    function showSlide(index) {
+        // Clamp index
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+
+        // Update slides
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+
+        // Update dots
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+
+        currentIndex = index;
+    }
+
+    // ---- Next slide ----
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
+
+    // ---- Start auto-rotation ----
+    function startAutoRotate() {
+        if (intervalId) clearInterval(intervalId);
+        intervalId = setInterval(nextSlide, INTERVAL_MS);
+    }
+
+    // ---- Stop auto-rotation ----
+    function stopAutoRotate() {
+        if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+    }
+
+    // ---- Dot click handler ----
+    dots.forEach((dot) => {
+        dot.addEventListener('click', function () {
+            const index = parseInt(this.dataset.index, 10);
+            if (!isNaN(index) && index !== currentIndex) {
+                stopAutoRotate();
+                showSlide(index);
+                startAutoRotate();
+            }
+        });
+    });
+
+    // ---- Pause on hover ----
+    const carousel = document.getElementById('testimonialCarousel');
+    if (carousel) {
+        carousel.addEventListener('mouseenter', stopAutoRotate);
+        carousel.addEventListener('mouseleave', startAutoRotate);
+    }
+
+    // ---- Start ----
+    showSlide(0);
+    startAutoRotate();
+
+    // ---- Expose for debugging (optional) ----
+    window.__testimonial = { showSlide, nextSlide, startAutoRotate, stopAutoRotate };
+})();
