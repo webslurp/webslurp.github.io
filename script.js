@@ -338,3 +338,46 @@ document.addEventListener('click', function(e) {
     // ---- Expose for debugging (optional) ----
     window.__testimonial = { showSlide, nextSlide, startAutoRotate, stopAutoRotate };
 })();
+
+async function getLatestVersion() {
+  try {
+    const res = await fetch(
+      "https://raw.githubusercontent.com/hangga/webslurp/refs/heads/main/manifest.json"
+    );
+
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
+    }
+
+    const data = await res.json();
+
+    console.log(data.version); // 1.5.0
+    console.log(data.message);
+
+    return data;
+  } catch (err) {
+    console.error(err);
+    return null;
+  }
+}
+
+// ===== DISPLAY LATEST VERSION IN UPDATE SECTION =====
+async function displayLatestVersion() {
+  const versionSpan = document.getElementById('version-number');
+  if (!versionSpan) return;
+
+  try {
+    const data = await getLatestVersion();
+    if (data && data.version) {
+      versionSpan.textContent = `${data.version}`;
+    } else {
+      versionSpan.textContent = 'unavailable';
+    }
+  } catch (err) {
+    console.warn('Failed to fetch version:', err);
+    versionSpan.textContent = 'unavailable';
+  }
+}
+
+// Jalankan setelah DOM siap
+document.addEventListener('DOMContentLoaded', displayLatestVersion);
